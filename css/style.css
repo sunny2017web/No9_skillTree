@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  color: #fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#10030a+0,301a3b+100 */
+  background: #10030a;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#10030a), to(#301a3b));
+  background: linear-gradient(to bottom, #10030a 0%, #301a3b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10030a', endColorstr='#301a3b',GradientType=0 );
+  /* IE6-9 */
+}
+
+.wrapper > div {
+  background-image: url("../img/img_hexcat.png"), url("../img/img_rocket.png"), url("../img/img_footer.png");
+  background-size: auto, 200px ,auto;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 100px 85%, 90% bottom, center bottom;
+  min-height: 700px;
+  padding-bottom: 450px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mTitle {
+  text-align: center;
+  font-size: 35px;
+}
+
+.mTitle > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mTitle > div.icon {
+  width: 180px;
+}
+
+.mTitle > div.txt {
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 0 3px 7px #0093FF;
+}
+
+.skillStep {
+  margin-bottom: 150px;
+}
+
+.skillStep .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 15px;
+  background-color: #efefef;
+  position: relative;
+}
+
+.skillStep .arrow::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 0 13px 10px;
+  border-color: transparent transparent transparent #efefef;
+  position: absolute;
+  right: -10px;
+  top: -6px;
+}
+
+.skillStep .rArrow::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 0 13px 10px;
+  border-color: transparent transparent transparent #efefef;
+  position: absolute;
+  left: -10px;
+  top: -6px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.skillStep .box {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.skillStep .box > div {
+  margin: 25px 5px;
+}
+
+.skillStep .icon {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.skillStep .pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid #5C5C5C;
+  background: #0c467e;
+  width: 65px;
+  height: 65px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
+.box1 .hLine {
+  position: absolute;
+  width: 90px;
+  height: 15px;
+  background-color: #efefef;
+  right: 55px;
+  top: 32px;
+}
+
+.box1 .hLine2 {
+  width: 63px;
+  top: 107px;
+  right: -16px;
+}
+
+.box1 .vLine {
+  position: absolute;
+  width: 95px;
+  height: 15px;
+  background-color: #efefef;
+  right: 7px;
+  top: 72px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.box2 .vLine {
+  position: absolute;
+  width: 269px;
+  height: 15px;
+  background-color: #efefef;
+  right: -152px;
+  top: 43px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.box4 .vLine {
+  position: absolute;
+  width: 269px;
+  height: 15px;
+  background-color: #efefef;
+  left: -131px;
+  top: 43px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.box4 .vLine1 {
+  width: 21px;
+  height: 15px;
+  background-color: #efefef;
+  left: -25px;
+  position: absolute;
+  top: -84px;
+}
+
+.box4 .vLine2 {
+  width: 21px;
+  height: 15px;
+  background-color: #efefef;
+  left: -25px;
+  position: absolute;
+  bottom: -83px;
+}
+
+.skillTxt {
+  position: relative;
+  border-radius: 65px;
+  border: 10px solid #0093FF;
+  background-color: #fff;
+  background-image: url(../img/img_blade-1.png);
+  background-repeat: no-repeat;
+  background-position: 135px center;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px 40px 30px 250px;
+  font-size: 30px;
+  max-width: 1160px;
+  float: right;
+}
+
+.skillTxt .title {
+  color: #505050;
+  font-weight: bold;
+}
+
+.skillTxt .intro {
+  color: #7B7B7B;
+}
+
+.skillTxt .img {
+  position: absolute;
+  left: -100px;
+  bottom: -75px;
+}
+/*# sourceMappingURL=style.css.map */
